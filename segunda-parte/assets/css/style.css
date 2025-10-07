@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.clinicabiblica.com/images/galerias/cirugia-sa/cirugias02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 15px 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 30px;
+    padding-left: 20px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.nav-list li a:hover {
+    background-color: #333333;
+    border-radius: 5px;
+}
+
+.nav-list li a img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.nav-list li a:hover img {
+    filter: brightness(1.2);
+}
+
+.perfil-doctor {
+    background-color: white;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #e01d1d;
+}
+
+.nombre-doctor {
+    color: #000000;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.especialidad {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#descripcion {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.btn-agendar {
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.btn-agendar:hover {
+    background-color: #e01d1d;
+}
+
+.comentarios-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.comentarios-section h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.comentarios-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tarjeta-comentario {
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #e01d1d;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 10px;
+}
+
+.tarjeta-comentario h3 {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.comentario {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.fecha {
+    color: #999;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .comentarios-container {
+        flex-direction: column;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
