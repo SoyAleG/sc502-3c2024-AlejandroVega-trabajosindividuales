@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro de Estudiantes - SC502 Caso 1</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Registro de Estudiantes</h1>
+
+    <form id="studentForm" novalidate>
+      <div class="field">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Juan" required />
+      </div>
+
+      <div class="field">
+        <label for="apellidos">Apellidos</label>
+        <input id="apellidos" name="apellidos" type="text" placeholder="Pérez" required />
+      </div>
+
+      <div class="field">
+        <label for="nota">Nota (0 - 100)</label>
+        <input id="nota" name="nota" type="number" min="0" max="100" placeholder="85" required />
+      </div>
+
+      <div class="actions">
+        <button type="submit">Registrar</button>
+        <button type="button" id="limpiarBtn">Limpiar registros</button>
+      </div>
+    </form>
+
+    <section>
+      <h2>Estudiantes registrados</h2>
+      <table id="studentsTable">
+        <thead>
+          <tr><th>#</th><th>Nombre</th><th>Apellidos</th><th>Nota</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="JS/main.js"></script>
+</body>
+</html>

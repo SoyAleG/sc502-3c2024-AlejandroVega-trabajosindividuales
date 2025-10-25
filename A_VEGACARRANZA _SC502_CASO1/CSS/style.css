@@ -1,0 +1,86 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url('https://cdn.wallpapersafari.com/31/93/L2C9Zb.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 18px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  margin: 8px 0 16px 0;
+  color: #222;
+}
+
+.field {
+  margin-bottom: 12px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.field input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background: #2d7ef7;
+  color: white;
+}
+
+#limpiarBtn {
+  background: #e0e0e0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+table thead {
+  background: #f0f0f0;
+}
+
+table th, table td {
+  padding: 8px;
+  border: 1px solid #e9e9e9;
+  text-align: left;
+}
